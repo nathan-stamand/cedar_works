@@ -18,3 +18,62 @@ body {
     font-size: 200%;
     color: #231F20;
 }
+
+.banner-hero {
+    color: white;
+    padding: 60px;
+    background-color: rgb(95, 80, 80);
+    background-image: url("../media/deck_background_img_A.png");
+    background-size: cover;
+}
+
+.headline {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.heavy-emph {
+    display: inline-block;
+    font-style: italic;
+    font-weight: 700;
+    background-image: url('../media/underline_graphic.png');
+    min-height: 75px;
+    background-repeat: no-repeat;
+    background-position: 10px 100%;
+}
+
+.headline-subtext {
+    line-height: 30px;
+    font-size: 26px;
+    font-weight: 500;
+    color: #FFFCE9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-btn-container {
+    border-top: 1px solid #E8D5BC;
+}
+
+.portfolio-btn {
+    display: inline-block;
+    margin: 30px 0px 0px 0px;
+    width: 240px;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    border: 1px white solid;
+    padding: 10px;
+}
+
+.trex-pro-logo {
+    position: absolute;
+    display: inline-block;
+    min-width: 235px;
+    z-index: 999;
+    left: 80%;
+    top: 100%;
+}
