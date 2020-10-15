@@ -116,3 +116,30 @@ One possible fix is reducing font size on small screens?
   .star-container, .google-container {
       padding: 10px 0 30px 0;
   }
+
+  /* 
+  Lead Form Section
+  */
+
+  .lead-form-section {
+      background-image: url('../media/deck_background_img_B.png');
+      color: #FFFFFF;
+  }
+
+  .lead-form-grid {
+      background-color: #5f341050;
+  }
+
+  .lead-form-container {
+    background-color: #91CAFF;
+  }
+
+  .lead-form {
+      background-image: url('../media/form_background.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .lead-form-heading, .lead-form-inputs {
+      background-color: #91CAFF99;
+  }
