@@ -69,11 +69,45 @@ body {
     padding: 10px;
 }
 
-.trex-pro-logo {
-    position: absolute;
-    display: inline-block;
+/* .trex-pro-logo {
+    /* position: absolute;
+    display: none;
     min-width: 235px;
     z-index: 999;
     left: 80%;
-    top: 100%;
-}
+    top: 50%;
+  } */
+
+  .testimonials {
+    background-image: url('../media/testimonial_background.png');
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    padding-bottom: 3%;
+  }
+
+  .testimonial-header {
+     font-size: 34px;
+     font-family: 'Lato', sans-serif;
+     font-weight: 900;
+     padding: 6% 0% 3% 0%;
+  }
+
+  .testimonial-oneline {
+      font-family: "Lato", sans-serif;
+      font-size: 24px;
+      font-style: italic;
+      font-weight: 900;
+      padding: 40px 0 25px 0;
+      margin: 0;
+  }
+
+  .testimonial-container {
+    border-top: solid #9F7857 1px;
+    color: #5F3310;
+    font-size: 18px;
+  }
+
+  .star-container, .google-container {
+      padding: 10px 0 30px 0;
+  }
