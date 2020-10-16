@@ -131,15 +131,64 @@ One possible fix is reducing font size on small screens?
   }
 
   .lead-form-container {
-    background-color: #91CAFF;
-  }
-
-  .lead-form {
       background-image: url('../media/form_background.png');
       background-repeat: no-repeat;
       background-size: cover;
   }
 
-  .lead-form-heading, .lead-form-inputs {
+  .promise-heading {
+      font-family: "Lato", sans-serif;
+      font-size: 32px;
+      font-weight: 900;
+  }
+
+  .promise > p {
+    font-family: "Lato", sans-serif;
+    font-size: 22px;
+  }
+
+  .promise-checklist li {
+      font-family: "Lato", sans-serif;
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 900;
+      margin: 10px 0px;
+  }
+
+  .promise-closer {
+      font-family: "Lato", sans-serif;
+      font-size: 28px;
+      font-weight: 900;
+  }
+
+  .lead-form {
       background-color: #91CAFF99;
+      padding: 40px;
+  }
+
+  .lead-form-inputs {
+      background-color: #91CAFF90;
+  }
+
+  .lead-form-heading > h2 {
+      font-family: "Lato", sans-serif;
+      font-size: 30px;
+      font-weight: 900;
+      text-shadow: 1px 1px 6px #004E96;
+  }
+
+  .lead-form-heading > p {
+      color: #0361B8;
+      font-family: "Lato", sans-serif;
+      font-size: 14px;
+  }
+
+  .form-submit {
+      border: #FFF 1px solid;
+      color: white;
+      padding:  20px 0;
+      background-color: #0361B8;
+      font-family: "Lato", sans-serif;
+      font-size: 22;
+      font-weight: bold;
   }
