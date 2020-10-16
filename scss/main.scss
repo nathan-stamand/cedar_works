@@ -2,7 +2,11 @@
 /* 
 Header
 */
-
+.page-header {
+    @include breakpoint(small only) {
+        margin: 5px;
+    }
+}
 .header-slogan {
     font-family: "Lato", sans-serif;
     font-style: italic;
@@ -79,6 +83,9 @@ One possible fix is reducing font size on small screens?
     font-weight: 500;
     color: #FFFCE9;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    @include breakpoint(small only) {
+        font-size: 18px
+    }
 }
 
 .portfolio-btn-container {
@@ -122,6 +129,9 @@ One possible fix is reducing font size on small screens?
      font-family: 'Lato', sans-serif;
      font-weight: 900;
      padding: 6% 0% 3% 0%;
+     @include breakpoint(small only) {
+        font-size: 26px
+    }
   }
 
   .testimonial-oneline {
@@ -131,6 +141,9 @@ One possible fix is reducing font size on small screens?
       font-weight: 900;
       padding: 40px 0 25px 0;
       margin: 0;
+    @include breakpoint(small only) {
+        font-size: 22px
+    }
   }
 
   .testimonial-container {
@@ -185,6 +198,10 @@ One possible fix is reducing font size on small screens?
       font-family: "Lato", sans-serif;
       font-size: 32px;
       font-weight: 900;
+      @include breakpoint(small only) {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
   }
 
   .promise > p {
