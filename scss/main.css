@@ -128,7 +128,7 @@ One possible fix is reducing font size on small screens?
 
   .lead-form-grid {
       background-color: #5f341050;
-      padding: 5%
+      padding: 5% 0;
   }
 
   .lead-form-container {
@@ -215,7 +215,7 @@ Footer Callout Section
 
 div.callout {
     background-color: #0361B8;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 /* I can't get the weight to be 'light' -- I don't know what to do about that. */
