@@ -1,7 +1,4 @@
-body {
-    font-family: 'Lato', sans-serif;
-}
-
+@import './settings';
 /* 
 Header
 */
@@ -12,6 +9,9 @@ Header
     font-size: 18px;
     color: #9F7857;
     padding: 2em;
+    @include breakpoint(medium down) {
+        padding: 0;
+    }
 }
 
 .call-to-action > span {
@@ -34,6 +34,9 @@ Header
     background-color: rgb(95, 80, 80);
     background-image: url("../media/deck_background_img_A.png");
     background-size: cover;
+    @include breakpoint(small only) {
+        padding: 10px
+    }
 }
 
 .headline {
@@ -41,6 +44,12 @@ Header
     font-weight: 500;
     font-size: 48px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    @include breakpoint(medium only) {
+        font-size: 36px;
+    }
+    @include breakpoint(small only) {
+        font-size: 30px
+    }
 }
 
 /* 
@@ -56,6 +65,12 @@ One possible fix is reducing font size on small screens?
     min-height: 75px;
     background-repeat: no-repeat;
     background-position: 10px 100%;
+    @include breakpoint(medium only) {
+        min-height: 60px
+    }
+    @include breakpoint(small only) {
+        min-height: 50px;
+    }
 }
 
 .headline-subtext {
@@ -89,7 +104,9 @@ One possible fix is reducing font size on small screens?
     position: relative;
     min-width: 235px;
     left: 55%;
-    top: -20%;
+    @include breakpoint(medium down) {
+        left: 0;
+    }
   }
 
   .testimonials {
@@ -147,10 +164,21 @@ One possible fix is reducing font size on small screens?
       background-repeat: no-repeat;
       background-size: cover;
       max-width: 600px;
+      margin-right: 8em;
+      @include breakpoint(xlarge down) {
+        margin: 20px 0;
+    }
   }
 
   .promise {
-      padding: 0 3em 0 11em;
+      margin: 0 0em 0 10em;
+      padding: 0 5em 0 7em;
+      @include breakpoint(xlarge down) {
+          padding: 0 20px;
+          margin: 0;
+          text-align: center;
+      }
+
   }
 
   .promise-heading {
@@ -198,7 +226,8 @@ One possible fix is reducing font size on small screens?
     font-family: "Lato", sans-serif;
     color: #22222250;
     font-size: 12px;
-    height: 91px
+    height: 91px;
+    resize: none;
 }
 
   .lead-form-heading > h2 {
@@ -242,6 +271,9 @@ Footer Callout Section
     font-family: "Lato", sans-serif;
     font-size: 36px;
     font-weight: 900;
+    @include breakpoint(small only) {
+        font-size: 30px
+    }
 }
 
 div.callout {
