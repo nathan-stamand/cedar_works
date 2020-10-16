@@ -1,14 +1,16 @@
 @import './settings';
+
 /* 
 Header
 */
+
 .page-header {
     @include breakpoint(small only) {
         margin: 5px;
     }
 }
+
 .header-slogan {
-    font-family: "Lato", sans-serif;
     font-style: italic;
     font-size: 18px;
     color: #9F7857;
@@ -28,13 +30,13 @@ Header
 .phone-num {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    font-size: 200%;
+    font-size: 32px;
     color: #231F20;
 }
 
 .banner-hero {
     color: white;
-    padding: 50px;
+    padding: 50px 50px 20px 50px;
     background-color: rgb(95, 80, 80);
     background-image: url("../media/deck_background_img_A.png");
     background-size: cover;
@@ -105,7 +107,7 @@ One possible fix is reducing font size on small screens?
     padding: 10px;
 }
 
-/* This gets the logo roughly in the correct spot; I'd love to know how to handle its positioning. */
+/* This gets the trex-pro-logo roughly in the correct spot; I'd love to know how to handle its positioning. */
 /* It also throws off the spacing at the bottom of the Banner Hero section. */
 .trex-pro-logo {
     position: relative;
@@ -114,141 +116,131 @@ One possible fix is reducing font size on small screens?
     @include breakpoint(medium down) {
         left: 0;
     }
-  }
+}
 
-  .testimonials {
+.testimonials {
     background-image: url('../media/testimonial_background.png');
-    font-family: "Lato", sans-serif;
     font-weight: 900;
     font-style: italic;
     padding-bottom: 3%;
-  }
+}
 
-  .testimonial-header {
-     font-size: 34px;
-     font-family: 'Lato', sans-serif;
-     font-weight: 900;
-     padding: 6% 0% 3% 0%;
-     @include breakpoint(small only) {
+.testimonial-header {
+    font-size: 34px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    padding: 6% 0% 3% 0%;
+    @include breakpoint(small only) {
         font-size: 26px
     }
-  }
+}
 
-  .testimonial-oneline {
-      font-family: "Lato", sans-serif;
-      font-size: 24px;
-      font-style: italic;
-      font-weight: 900;
-      padding: 40px 0 25px 0;
-      margin: 0;
+.testimonial-oneline {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 900;
+    padding: 40px 0 25px 0;
+    margin: 0;
     @include breakpoint(small only) {
         font-size: 22px
     }
-  }
+}
 
-  .testimonial-container {
+.testimonial-container {
     border-top: solid #9F7857 1px;
     color: #5F3310;
     font-size: 18px;
-  }
+}
 
-  .star-container, .google-container {
-      padding: 10px 0 30px 0;
-  }
+.star-container, .google-container {
+    padding: 10px 0 30px 0;
+}
 
-  /* 
-  Lead Form Section
-  */
+/* 
+Lead Form Section
+*/
 
-  .lead-form-section {
-      background-image: url('../media/deck_background_img_B.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      color: #FFFFFF;
-  }
+.lead-form-section {
+    background-image: url('../media/deck_background_img_B.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+}
 
-  .lead-form-grid {
-      background-color: #5f341050;
-      padding: 5% 0;
-  }
+.lead-form-grid {
+    background-color: #5f341050;
+    padding: 5% 0;
+}
 
-  .lead-form-container {
-      background-image: url('../media/form_background.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      max-width: 600px;
-      margin-right: 8em;
-      @include breakpoint(xlarge down) {
+.lead-form-container {
+    background-image: url('../media/form_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 600px;
+    margin-right: 8em;
+    @include breakpoint(xlarge down) {
         margin: 20px 0;
     }
-  }
+}
 
-  .promise {
-      margin: 0 0em 0 10em;
-      padding: 0 5em 0 7em;
-      @include breakpoint(xlarge down) {
-          padding: 0 20px;
-          margin: 0;
-          text-align: center;
-      }
+.promise {
+    margin: 0 0em 0 10em;
+    padding: 0 5em 0 7em;
+    @include breakpoint(xlarge down) {
+        padding: 0 20px;
+        margin: 0;
+        text-align: center;
+    }
+}
 
-  }
-
-  .promise-heading {
-      font-family: "Lato", sans-serif;
-      font-size: 32px;
-      font-weight: 900;
-      @include breakpoint(small only) {
+.promise-heading {
+    font-size: 32px;
+    font-weight: 900;
+    @include breakpoint(small only) {
         font-size: 26px;
         margin-bottom: 30px;
     }
-  }
+}
 
-  .promise > p {
-    font-family: "Lato", sans-serif;
-    font-size: 22px;
-  }
+.promise > p {
 
-  .promise-checklist li {
-      font-family: "Lato", sans-serif;
-      font-size: 18px;
-      font-style: italic;
-      font-weight: 900;
-      margin: 10px 0px;
-  }
+  font-size: 22px;
+}
 
-  .promise-closer {
-      font-family: "Lato", sans-serif;
+.promise-checklist li {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 900;
+    margin: 10px 0px;
+}
+
+.promise-closer {
+    
       font-size: 28px;
       font-weight: 900;
   }
 
-  .lead-form {
-      background-color: #91CAFF99;
-      padding: 35px;
-      max-width: 600px;
-  }
+.lead-form {
+    background-color: #91CAFF99;
+    padding: 35px;
+    max-width: 600px;
+}
 
-  .lead-form-inputs {
-      background-color: #91CAFF90;
-  }
-
-  .lead-form-inputs input {
-      font-family: "Lato", sans-serif;
-      color: #22222250;
-      font-size: 12px;
-  }
-
-  .lead-form-inputs textarea {
-    font-family: "Lato", sans-serif;
+.lead-form-inputs input {
     color: #22222250;
     font-size: 12px;
-    height: 91px;
-    resize: none;
+}
+
+.lead-form-inputs textarea {
+
+  color: #22222250;
+  font-size: 12px;
+  height: 91px;
+  resize: none;
 }
 
   .lead-form-heading > h2 {
-      font-family: "Lato", sans-serif;
+    
       font-size: 30px;
       font-weight: 900;
       text-shadow: 1px 1px 6px #004E96;
@@ -256,7 +248,7 @@ One possible fix is reducing font size on small screens?
 
   .lead-form-heading > p {
       color: #0361B8;
-      font-family: "Lato", sans-serif;
+    
       font-size: 14px;
   }
 
@@ -266,7 +258,7 @@ One possible fix is reducing font size on small screens?
       padding:  20px 0;
       margin: 25px 0;
       background-color: #0361B8;
-      font-family: "Lato", sans-serif;
+    
       font-size: 22px;
       font-weight: 900;
   }
@@ -285,9 +277,9 @@ Footer Callout Section
 
 .callout > h3 {
     color: #FFFFFF;
-    font-family: "Lato", sans-serif;
     font-size: 36px;
     font-weight: 900;
+    padding: 20px 0 10px 0;
     @include breakpoint(small only) {
         font-size: 30px
     }
@@ -302,7 +294,6 @@ div.callout {
 footer.callout {
     background-color: #22170F;
     color: #9F7857;
-    font-family: "Lato", sans-serif;
     font-size: 12px;
     font-weight: 100;
     margin: 0;
